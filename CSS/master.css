@@ -1,0 +1,71 @@
+/* Global Variables */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* Components */
+
+
+/* start header */
+header {
+  text-transform: capitalize;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+header h2 {
+  color: blue;
+  margin: 0;
+  flex-basis: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+} 
+
+li:not(:first-child) {
+  margin-left: 1rem;
+}
+/* end header */
+/* start landing */
+.landing {
+  height: calc(100vh - 100px);
+  background-color: #eee;
+  position: relative;
+}
+
+.landing .container {
+  position: absolute;
+  top: 25%;
+  text-align: center;
+}
+
+.landing h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.landing p {
+  margin: auto;
+  width: 70%;
+  font-size: 1.2rem;
+}
+/* end landing */
+/* start article  */
+.articles .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* end article  */
