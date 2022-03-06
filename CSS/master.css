@@ -84,4 +84,40 @@ li:not(:first-child) {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
+.container > h3 {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container > h3::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 160px;
+  top: 50%;
+  transform: translate(0 , -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.container > h3::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -37px;
+  top: 50%;
+  transform: translate(0 , -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+}
 /* end article  */
