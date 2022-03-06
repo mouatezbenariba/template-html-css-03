@@ -44,6 +44,7 @@ li:not(:first-child) {
   height: calc(100vh - 100px);
   background-color: #eee;
   position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 .landing .container {
