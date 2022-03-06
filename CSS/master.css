@@ -41,9 +41,16 @@ li:not(:first-child) {
 /* end header */
 /* start landing */
 .landing {
-  height: calc(100vh - 100px);
-  background-color: #eee;
   position: relative;
+  height: calc(100vh - 100px);
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
@@ -62,6 +69,14 @@ li:not(:first-child) {
   margin: auto;
   width: 70%;
   font-size: 1.2rem;
+}
+
+.landing a {
+  position: relative;
+  top: 90%;
+  left: 50%;
+  font-size: 1.5rem;
+  color: blue;
 }
 /* end landing */
 /* start article  */
