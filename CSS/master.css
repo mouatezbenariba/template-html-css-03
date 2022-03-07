@@ -88,7 +88,7 @@ li:not(:first-child) {
 .container > h3 {
   position: relative;
   width: fit-content;
-  margin: auto;
+  margin: 4rem auto 4rem auto;
   padding: 0.5rem 1rem;
   border: 1px solid black;
   text-align: center;
