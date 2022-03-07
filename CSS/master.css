@@ -162,3 +162,27 @@ li:not(:first-child) {
   right: 21px;
 }
 /* end article  */
+/* start gallery  */
+.gallery .container {
+  background-color: #eee;
+}
+
+.gallery .images {
+
+}
+
+.gallery .images img {
+
+}
+
+.gallery .container::before {
+  content: "";
+  display: block;
+  height: 15vh;
+  background: linear-gradient(45deg, transparent 33.33%, white 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, white 33.33% 66.66%, transparent 66.66%);
+  background-repeat: repeat;
+  background-size: 2rem;
+  position: relative;
+  top: -36px;
+}
+/* end gallery  */
