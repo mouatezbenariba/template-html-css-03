@@ -13,7 +13,7 @@
 .container > h3 {
   position: relative;
   width: fit-content;
-  margin: 4rem auto 4rem auto;
+  margin: 0rem auto 4rem auto;
   padding: 0.5rem 1rem;
   border: 1px solid black;
   text-align: center;
@@ -148,23 +148,25 @@ li:not(:first-child) {
   position: relative;
   color: blue;
   border-top: 1px solid #ddd;
-  padding-top: 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
 }
 
 .cards figcaption p:last-of-type a {
-  color: blue;
   position: absolute;
   transform: translateY(13%);
   right: 21px;
+  color: blue;
 }
 /* end article  */
 /* start gallery  */
+.gallery {
+  background-color: #eee;
+}
 .gallery .container {
   position: relative;
-  background-color: #eee;
 }
 
 .gallery .images {
@@ -186,12 +188,113 @@ li:not(:first-child) {
 .gallery .container::before {
   content: "";
   display: block;
-  height: 15vh;
-  width: 100%;
-  background: linear-gradient(45deg, transparent 33.33%, white 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, white 33.33% 66.66%, transparent 66.66%);
-  background-repeat: repeat;
-  background-size: 3rem;
   position: absolute;
-  top: -43px;
+  top: -26px;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%);
+  background-repeat: repeat;
+  background-size: 2rem;
 }
 /* end gallery  */
+/* start features  */
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.features .feat {
+  border: 1px solid #ddd;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.features .feat-img {
+  position: relative;
+}
+
+.features .feat-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  opacity: 0.4;
+}
+
+.features .feat:first-child .feat-img::before {
+  background-color: red;
+}
+
+.features .feat:nth-child(2) .feat-img::before {
+  background-color: green;
+}
+
+.features .feat:last-child .feat-img::before {
+  background-color: blue;
+}
+
+.features img {
+  max-width: 100%;
+}
+
+.features .feat h4 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.features .feat h4::before {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14%;
+  height: 6px;
+}
+
+.features .feat:first-child h4::before {
+  background-color: red;
+}
+
+.features .feat:nth-child(2) h4::before {
+  background-color: green;
+}
+
+.features .feat:last-child h4::before {
+  background-color: blue;
+}
+
+.features .feat p {
+  margin: 2rem 0.8rem;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+.features .feat a {
+  border: 3px solid ;
+  border-radius: 11%;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.features .feat:first-child a {
+  border-color: red;
+  color: red;
+}
+
+.features .feat:nth-child(2) a {
+  border-color: green;
+  color: green;
+}
+
+.features .feat:last-child a {
+  border-color: blue;
+  color: blue;
+}
+/* end features  */
