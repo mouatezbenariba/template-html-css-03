@@ -5,7 +5,46 @@
 }
 
 /* Components */
+.container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
+.container > h3 {
+  position: relative;
+  width: fit-content;
+  margin: 4rem auto 4rem auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container > h3::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 160px;
+  top: 50%;
+  transform: translate(0 , -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.container > h3::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -37px;
+  top: 50%;
+  transform: translate(0 , -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+}
 
 /* start header */
 header {
@@ -80,46 +119,6 @@ li:not(:first-child) {
 }
 /* end landing */
 /* start article  */
-.articles .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.container > h3 {
-  position: relative;
-  width: fit-content;
-  margin: 4rem auto 4rem auto;
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.container > h3::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 160px;
-  top: 50%;
-  transform: translate(0 , -50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: blue;
-}
-
-.container > h3::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: -37px;
-  top: 50%;
-  transform: translate(0 , -50%);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: blue;
-}
 .articles .cards {
   display: grid;
   grid-template-columns: 1fr;
@@ -164,25 +163,35 @@ li:not(:first-child) {
 /* end article  */
 /* start gallery  */
 .gallery .container {
+  position: relative;
   background-color: #eee;
 }
 
 .gallery .images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
+.gallery .images div {
+  margin: 1rem;
+  background-color: white;
 }
 
 .gallery .images img {
-
+  max-width: 100%;
+  padding: 1rem;
 }
 
 .gallery .container::before {
   content: "";
   display: block;
   height: 15vh;
+  width: 100%;
   background: linear-gradient(45deg, transparent 33.33%, white 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, white 33.33% 66.66%, transparent 66.66%);
   background-repeat: repeat;
-  background-size: 2rem;
-  position: relative;
-  top: -36px;
+  background-size: 3rem;
+  position: absolute;
+  top: -43px;
 }
 /* end gallery  */
