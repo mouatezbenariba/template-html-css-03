@@ -24,7 +24,7 @@
   content: "";
   display: inline-block;
   position: absolute;
-  left: 160px;
+  left: 115%;
   top: 50%;
   transform: translate(0 , -50%);
   width: 15px;
@@ -205,10 +205,10 @@ li:not(:first-child) {
 }
 
 .features .feat {
-  border: 1px solid #ddd;
   margin: 1rem;
-  padding-bottom: 2rem;
   text-align: center;
+  border: 1px solid #ddd;
+  padding-bottom: 2rem;
 }
 
 .features .feat-img {
@@ -217,10 +217,10 @@ li:not(:first-child) {
 
 .features .feat-img::before {
   content: "";
-  display: block;
-  position: absolute;
   width: 100%;
   height: 99%;
+  display: block;
+  position: absolute;
   opacity: 0.4;
 }
 
@@ -241,19 +241,20 @@ li:not(:first-child) {
 }
 
 .features .feat h4 {
-  position: relative;
   font-size: 2rem;
+  position: relative;
   font-weight: bold;
 }
 
 .features .feat h4::before {
   content: "";
+  width: 14%;
+  height: 6px;
+  /* background-color: red; */
   position: absolute;
   top: 3rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 14%;
-  height: 6px;
 }
 
 .features .feat:first-child h4::before {
@@ -269,18 +270,20 @@ li:not(:first-child) {
 }
 
 .features .feat p {
-  margin: 2rem 0.8rem;
   line-height: 2;
   font-size: 1.5rem;
+  margin: 2rem 0.8rem;
 }
 
 .features .feat a {
-  border: 3px solid ;
-  border-radius: 11%;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
   font-size: 1.5rem;
   text-decoration: none;
+  /* color: red; */
+  border: 3px solid ;
+  /* border-color: red;  */
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 11%;
 }
 
 .features .feat:first-child a {
@@ -298,3 +301,41 @@ li:not(:first-child) {
   color: blue;
 }
 /* end features  */
+/* start testimonials  */
+.testimonials .test-card-01 {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 4%;
+  box-shadow: 0px 0px 2px 3px #ddd;
+  position: relative;
+  padding: 1rem;
+}
+
+.testimonials .image {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 5rem;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.images img {
+  max-width: 100%;
+}
+
+.testimonials h4 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.testimonials span {
+  color: #bab5b5;
+}
+
+.stars {
+  color: gold;
+}
+/* end testimonials  */
