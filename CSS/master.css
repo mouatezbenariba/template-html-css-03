@@ -306,7 +306,7 @@ li:not(:first-child) {
   background-color: #eee;
 }
 
-.testimonials .test-card-01 {
+.testimonials .test-card {
   background-color: white;
   margin: 1rem;
   border-radius: 4%;
@@ -349,6 +349,21 @@ li:not(:first-child) {
 
 .stars > i:not(:last-of-type){
   color: gold;
+}
+
+/* 4th testimonial card 5 stars */
+.test-cards .test-card:nth-of-type(4) .stars > i{
+  color: gold;
+}
+
+/* 5th testimonial card 3 stars */
+.test-cards .test-card:nth-of-type(5) .stars > i:nth-of-type(4) {
+  color: black;
+}
+
+/* 6th testimonial card 3 stars */
+.test-cards .test-card:nth-of-type(6) .stars > i:nth-of-type(4) {
+  color: black;
 }
 
 .stars p {
