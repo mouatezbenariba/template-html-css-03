@@ -302,6 +302,10 @@ li:not(:first-child) {
 }
 /* end features  */
 /* start testimonials  */
+.testimonials {
+  background-color: #eee;
+}
+
 .testimonials .test-card-01 {
   background-color: white;
   margin: 1rem;
@@ -311,31 +315,44 @@ li:not(:first-child) {
   padding: 1rem;
 }
 
-.testimonials .image {
-  right: 0;
-  top: 0;
+.avatar {
   position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  right: 0;
+  box-shadow: 0 0 0 10px #eee;
   width: 5rem;
-  overflow: hidden;
-  transform: translateY(-50%);
+  height: 5rem;
+  border-radius: 50%;
 }
 
-.images img {
+.avatar img {
   max-width: 100%;
+  border-radius: 50%;
 }
 
 .testimonials h4 {
   margin-top: 0;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 0;
 }
 
 .testimonials span {
-  color: #bab5b5;
+  margin-bottom: 0.5rem;
+  color: #7a7a7a;
 }
 
 .stars {
+  margin-top: 0.5rem;
+}
+
+.stars > i:not(:last-of-type){
   color: gold;
+}
+
+.stars p {
+  margin: 0.5rem 0;
+  color: #7a7a7a;
 }
 /* end testimonials  */
