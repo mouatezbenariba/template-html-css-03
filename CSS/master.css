@@ -371,3 +371,86 @@ li:not(:first-child) {
   color: #7a7a7a;
 }
 /* end testimonials  */
+/* start team members  */
+.member {
+  background-color: #eee;
+  width: 80%;
+  height: 27rem;
+  position: relative;
+  right: -1rem;
+  border-radius: 4%;
+  margin: 2rem auto;
+  padding: 0 1rem 0.5rem;
+  direction: rtl;
+}
+
+.member::before {
+  content: "";
+  display: inline-block;
+  width: 0%;
+  height: 100%;
+  opacity: 0.9;
+  position: absolute;
+  margin: 0rem -1rem;
+  padding: 0 1rem 0.5rem;
+  border-radius: 4%;
+  transition-duration: 0.3s;
+}
+
+
+.member:hover::before {
+  background-color: #ddd;
+  width: 100%;
+}
+
+.member-image {
+  position: relative;
+  left: -3rem;
+  top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.member-image img {
+  max-width: 100%;
+  border-radius: 4%;
+  filter: none;
+  transition-property: filter;
+  transition-duration: 0.3s;
+}
+
+.member:hover img {
+  filter: grayscale(1);
+}
+
+.team-contact {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.team-contact i {
+  margin: 1rem;
+  color: #777;
+}
+
+.team-caption {
+  position: relative;
+  direction: ltr;
+}
+
+.member:hover .team-caption h4 {
+  color: #777;
+  transition-duration: 0.3s;
+}
+
+.team-caption h4 {
+  position: relative;
+  top: 0rem;
+  font-size: 1.4rem;
+  color: blue;
+}
+/* end team members  */
