@@ -373,34 +373,34 @@ li:not(:first-child) {
 /* end testimonials  */
 /* start team members  */
 .member {
-  background-color: #eee;
-  width: 80%;
-  height: 27rem;
+  direction: rtl;
   position: relative;
   right: -1rem;
-  border-radius: 4%;
+  width: 80%;
+  height: 27rem;
   margin: 2rem auto;
   padding: 0 1rem 0.5rem;
-  direction: rtl;
+  border-radius: 4%;
+  background-color: #eee;
 }
 
 .member::before {
   content: "";
+  position: absolute;
   display: inline-block;
   width: 0%;
   height: 100%;
-  opacity: 0.9;
-  position: absolute;
   margin: 0rem -1rem;
   padding: 0 1rem 0.5rem;
   border-radius: 4%;
+  opacity: 0.9;
   transition-duration: 0.3s;
 }
 
 
 .member:hover::before {
-  background-color: #ddd;
   width: 100%;
+  background-color: #ddd;
 }
 
 .member-image {
@@ -438,8 +438,8 @@ li:not(:first-child) {
 }
 
 .team-caption {
-  position: relative;
   direction: ltr;
+  position: relative;
 }
 
 .member:hover .team-caption h4 {
@@ -450,6 +450,8 @@ li:not(:first-child) {
 .team-caption h4 {
   position: relative;
   top: 0rem;
+  margin-bottom: 0rem;
+  padding-top: 0.5rem;
   font-size: 1.4rem;
   color: blue;
 }
