@@ -165,10 +165,23 @@ li:not(:first-child) {
 .gallery {
   background-color: #eee;
 }
+  /* start the zig-zag effect  */
 .gallery .container {
   position: relative;
 }
 
+.gallery .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -26px;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%);
+  background-repeat: repeat;
+  background-size: 2rem;
+}
+  /* end the zig-zag effect  */
 .gallery .images {
   display: grid;
   grid-template-columns: 1fr;
@@ -183,18 +196,6 @@ li:not(:first-child) {
 .gallery .images img {
   max-width: 100%;
   padding: 1rem;
-}
-
-.gallery .container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -26px;
-  width: 100%;
-  height: 10vh;
-  background: linear-gradient(45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%);
-  background-repeat: repeat;
-  background-size: 2rem;
 }
 /* end gallery  */
 /* start features  */
@@ -457,5 +458,81 @@ li:not(:first-child) {
 }
 /* end team members  */
 /* start services  */
+  /* start the zig-zag effect */
+  section.services {
+    background-color: #eee;
+}
 
+  section.services .container {
+  position: relative;
+}
+
+section.services .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -26px;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%);
+  background-repeat: repeat;
+  background-size: 2rem;
+}
+  /* start the zig-zag effect */
+.services-cards {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem;
+  background-color: #eee;
+}
+
+.serv-card {
+  background-color: white;
+}
+
+.serv-card-image {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.serv-card-image i {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: #777;
+}
+
+.serv-card-image h4 {
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.serv-card-info {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: linear-gradient(120deg, blue 25%, #777 25% 40%, red 40%);
+  counter-reset: card-number 1;
+  position: relative;
+}
+
+.serv-card-info::before {
+  content: counter(card-number);
+  color: white;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  counter-increment: card-number;
+}
+
+.serv-card-info a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.1rem;
+}
 /* end services  */
