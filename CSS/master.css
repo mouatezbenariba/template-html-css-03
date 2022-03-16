@@ -536,3 +536,60 @@ section.services .container::before {
   font-size: 1.1rem;
 }
 /* end services  */
+/* start coding skills  */
+.coding-skills {
+  margin: 1rem;
+}
+
+.coding-skill p {
+  background-color: #eee;
+  height: 2rem;
+  position: relative;
+}
+
+.coding-skill p::before {
+  content: "";
+  background-color: blue;
+  display: inline-block;
+  height: 100%;
+}
+
+.coding-skill p::after {
+  position: absolute;
+  right: 0;
+  top: -2.7rem;
+  font-weight: bold;
+  border: 1px solid blue;
+  border-radius: 22%;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.coding-skill:nth-child(1) p::before{
+  width: 80%;
+}
+.coding-skill:nth-child(1) p::after {
+  content: "80%";
+}
+
+.coding-skill:nth-child(2) p::before{
+  width: 85%;
+}
+.coding-skill:nth-child(2) p::after {
+  content: "85%";
+}
+
+.coding-skill:nth-child(3) p::before{
+  width: 70%;
+}
+.coding-skill:nth-child(3) p::after {
+  content: "70%";
+}
+
+.coding-skill:nth-child(4) p::before{
+  width: 80%;
+}
+.coding-skill:nth-child(4) p::after {
+  content: "80%";
+}
+/* end coding skills  */
