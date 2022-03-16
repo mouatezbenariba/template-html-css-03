@@ -89,7 +89,7 @@ li:not(:first-child) {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #eee;
+  background-color: #ececec;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
@@ -163,7 +163,7 @@ li:not(:first-child) {
 /* end article  */
 /* start gallery  */
 .gallery {
-  background-color: #eee;
+  background-color: #ececec;
 }
   /* start the zig-zag effect  */
 .gallery .container {
@@ -177,7 +177,7 @@ li:not(:first-child) {
   top: -26px;
   width: 100%;
   height: 10vh;
-  background: linear-gradient(45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%);
+  background: linear-gradient(45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%);
   background-repeat: repeat;
   background-size: 2rem;
 }
@@ -304,7 +304,7 @@ li:not(:first-child) {
 /* end features  */
 /* start testimonials  */
 .testimonials {
-  background-color: #eee;
+  background-color: #ececec;
 }
 
 .testimonials .test-card {
@@ -321,7 +321,7 @@ li:not(:first-child) {
   top: -50%;
   transform: translateY(50%);
   right: 0;
-  box-shadow: 0 0 0 10px #eee;
+  box-shadow: 0 0 0 10px #ececec;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -382,7 +382,7 @@ li:not(:first-child) {
   margin: 2rem auto;
   padding: 0 1rem 0.5rem;
   border-radius: 4%;
-  background-color: #eee;
+  background-color: #ececec;
 }
 
 .member::before {
@@ -460,7 +460,7 @@ li:not(:first-child) {
 /* start services  */
   /* start the zig-zag effect */
   section.services {
-    background-color: #eee;
+    background-color: #ececec;
 }
 
   section.services .container {
@@ -474,7 +474,7 @@ section.services .container::before {
   top: -26px;
   width: 100%;
   height: 10vh;
-  background: linear-gradient(45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #eee 33.33% 66.66%, transparent 66.66%);
+  background: linear-gradient(45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%);
   background-repeat: repeat;
   background-size: 2rem;
 }
@@ -483,7 +483,7 @@ section.services .container::before {
   display: grid;
   gap: 2rem;
   margin: 2rem;
-  background-color: #eee;
+  background-color: #ececec;
 }
 
 .serv-card {
@@ -542,7 +542,7 @@ section.services .container::before {
 }
 
 .coding-skill p {
-  background-color: #eee;
+  background-color: #ececec;
   height: 2rem;
   position: relative;
 }
@@ -593,3 +593,8 @@ section.services .container::before {
   content: "80%";
 }
 /* end coding skills  */
+/* start how to works */
+section.how-works {
+  background-color: #ececec;
+}
+/* end how to works */
