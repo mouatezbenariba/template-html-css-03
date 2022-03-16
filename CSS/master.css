@@ -597,4 +597,45 @@ section.services .container::before {
 section.how-works {
   background-color: #ececec;
 }
+
+.how-works-image {
+  margin: 1rem;
+}
+
+.how-works-image img {
+  max-width: 100%;
+}
+
+.work-card {
+  background-color: #ddd;
+  border: 2px solid white;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 2%;
+}
+
+.work-card-image {
+  width: 20%;
+  margin: auto;
+}
+
+.work-card-image img {
+  max-width: 100%;
+}
+
+.work-card-info {
+  text-align: center;
+}
+
+.work-card-info h4 {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+.work-card-info p {
+  line-height: 1.7;
+  color: black;
+  margin: 0;
+  font-size: 1.2rem;
+}
 /* end how to works */
