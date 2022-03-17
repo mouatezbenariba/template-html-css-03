@@ -74,7 +74,7 @@ header ul {
   display: inline-flex;
 } 
 
-li:not(:first-child) {
+header li:not(:first-child) {
   margin-left: 1rem;
 }
 /* end header */
@@ -639,3 +639,75 @@ section.how-works {
   font-size: 1.2rem;
 }
 /* end how to works */
+/* start pricing plans  */
+.pricing-plans {
+  background-color: #ececec;
+}
+
+.plan {
+  background-color: white;
+  margin: 1rem;
+  padding: 2rem 0;
+}
+
+.plan .title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.plan-image {
+  width: 20%;
+  margin: auto;
+}
+
+.plan-image img {
+  max-width: 100%;
+}
+
+.plan span {
+  display: block;
+  text-align: center;
+}
+
+.plan-info ul {
+  list-style: none;
+  margin: 2rem 0px;
+  padding: 0;
+}
+
+span.price {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+li.check {
+  padding: 1.3rem 0;
+  border-top: 1px solid #ddd;
+  padding-left: 2rem;
+}
+
+.check::before {
+  content: "\f00c";
+  font: var(--fa-font-solid);
+  position: relative;
+  left: -0.7rem;
+  color: blue;
+  font-size: 1.3rem;
+}
+
+.plan-info a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+  border: 2px solid blue;
+  padding: 1rem;
+  border-radius: 9%;
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+/* end pricing plans  */
