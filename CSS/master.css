@@ -711,3 +711,60 @@ li.check {
   width: fit-content;
 }
 /* end pricing plans  */
+/* start top videos  */
+.videos {
+  margin: 1rem;
+  border: 1px solid #ddd;
+}
+
+.videos .name {
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.videos .name i {
+  position: absolute;
+  right: 1rem;
+}
+
+.videos ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.videos ul li {
+  position: relative;
+  padding: 1.5rem 1.5rem 3rem;
+}
+
+.videos ul:not(last-child) li {
+  border-bottom: 1px solid #ddd;
+}
+
+.videos span {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  color: #777;
+}
+
+.preview {
+  padding: 0.5rem;
+  background-color: #ddd;
+}
+
+.preview img {
+  max-width: 100%;
+}
+
+.preview .info {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+/* end top videos  */
