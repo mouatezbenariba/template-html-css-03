@@ -889,4 +889,98 @@ section.stats::before {
   border-style: none;
   border-bottom: 1px solid #ddd;
 }
-/* end discount  */
+/* end discount */
+/* start footer */
+footer.contact .container {
+  padding: 0;
+}
+
+footer.contact {
+  background-color: darkorchid;
+  color: #ddd;
+  text-align: center;
+}
+
+footer.contact h2 {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
+  font-size: 3rem;
+  color: white;
+}
+
+footer.contact .links i {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.1rem;
+  background-color: turquoise;
+  font-size: 1.4rem;
+}
+
+footer.contact .links i::before {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer.contact p:first-of-type {
+  margin: 1.5rem 3rem;
+}
+
+footer.contact ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer.contact ul li {
+  margin: auto 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+footer.contact ul li i {
+  color: chocolate;
+}
+
+footer.contact .location {
+  margin-top: 3rem;
+}
+
+footer.contact .location i, footer.contact .time i, footer.contact .phone i {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: chocolate;
+  font-size: 1.7rem;
+}
+
+footer.contact .phone span {
+  display: block;
+  margin: 1rem;
+}
+
+footer.contact .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer.contact .images img {
+  width: 78px;
+  margin: 0.3rem;
+  border: 5px solid white;
+}
+
+footer.contact p:last-of-type {
+  margin: 0;
+  padding: 2rem;
+  border-top: 1px solid;
+}
+
+footer.contact p:last-of-type i {
+  color: red;
+  font-size: 1.5rem;
+}
+/* end footer  */
