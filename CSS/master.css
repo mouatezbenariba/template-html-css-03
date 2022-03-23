@@ -90,7 +90,6 @@ header nav ul.main-links > li {
   padding: 9px 0.6rem;
   transition-duration: 0.2s;
   border-top: 0.2rem solid transparent;
-  position: relative;
 }
 
 header nav ul.main-links > li:hover {
@@ -130,12 +129,12 @@ ul.other-links {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  left: -23rem;
+  left: 0;
   background-color: white;
   z-index: 1;
   visibility: hidden;
-  top: 2.24rem;
-  width: calc(100vw - 0.7rem);
+  top: 5.24rem;
+  width: calc(100vw);
 }
 
 ul.other-links li {
