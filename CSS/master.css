@@ -404,8 +404,25 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   opacity: 0.4;
 }
 
+.features .feat-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 70%);
+  transition-duration: 0.3s;
+}
+
+.features .feat:hover .feat-img::after {
+  clip-path: polygon(0% 100%, 100% 100%, 0% 70%);
+}
+
+
 .features .feat:first-child .feat-img::before {
-  background-color: red;
+  background-color: #f44036;
 }
 
 .features .feat:nth-child(2) .feat-img::before {
@@ -456,6 +473,51 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   margin: 2rem 0.8rem;
 }
 
+.feat div:last-child {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.features .feat div:last-child:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 176%;
+  color: white;
+  top: -0.6rem;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+
+.features .feat:first-child div:last-child:before {
+  background-color: #f44036;
+}
+
+.features .feat:nth-child(2) div:last-child:before {
+  background-color: #009688;
+}
+
+.features .feat:last-child div:last-child:before {
+  background-color: var(--main-color);
+}
+
+.features .feat div:last-child:before {
+  content: "";
+  position: absolute;
+  background-color: #f44036;
+  width: 0%;
+  height: 176%;
+  color: white;
+  top: -0.6rem;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+
+.feat:hover div:last-child:before {
+  width: 100%;
+}
+
 .features .feat a {
   font-size: 1.3rem;
   text-decoration: none;
@@ -478,6 +540,10 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
 .features .feat:last-child a {
   border-color: var(--main-color);
   color: var(--main-color);
+}
+
+.features .feat:hover a {
+  color: white;
 }
 /* end features  */
 /* start testimonials  */
