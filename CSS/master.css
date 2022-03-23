@@ -622,7 +622,7 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   position: relative;
   right: -1rem;
   width: 80%;
-  height: 27rem;
+  height: 30rem;
   margin: 2rem auto;
   padding: 0 1rem 0.5rem;
   border-radius: 4%;
@@ -735,7 +735,30 @@ section.services .container::before {
 }
 
 .serv-card {
+  position: relative;
   background-color: white;
+  box-shadow: 0 0 6px 0px #777777;
+  transition-duration: 0.5s;
+  top: 0;
+}
+
+.serv-card:hover {
+  top: -0.5rem;
+}
+
+.serv-card::before {
+  content: "";
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 3px;
+  background-color: var( --main-color);
+  transition-duration: 0.5s;
+}
+
+.serv-card:hover::before {
+  width: 100%;
 }
 
 .serv-card-image {
