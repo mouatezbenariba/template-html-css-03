@@ -17,6 +17,8 @@ html {
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .container > h3 {
@@ -28,6 +30,11 @@ html {
   width: fit-content;
   text-transform: uppercase;
   font-size: 1.7rem;
+}
+
+.container h3 + div {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .container > h3::before, .container > h3::after {
@@ -376,9 +383,10 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   content: "";
   display: block;
   position: absolute;
-  top: -26px;
-  width: 100%;
+  top: -25px;
+  width: 130%;
   height: 10vh;
+  left: -8rem;
   background: linear-gradient(45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%);
   background-repeat: repeat;
   background-size: 2rem;
@@ -428,6 +436,11 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   height: 100%;
 }
 
+@media (min-width: 1200px) {
+.gallery .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* end gallery  */
 /* start features  */
 .features {
@@ -597,12 +610,21 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
 .features .feat:hover a {
   color: white;
 }
+
+@media (min-width: 1200px) {
+  section.feature .features  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* end features  */
 /* start testimonials  */
 .testimonials {
   background-color: #ececec;
 }
 
+.testimonials .test-cards {
+  display: grid;
+}
 .testimonials .test-card {
   background-color: white;
   margin: 1rem;
@@ -667,14 +689,23 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   margin: 0.5rem 0;
   color: #7a7a7a;
 }
+
+@media (min-width: 1200px) {
+  section.testimonials .test-cards  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* end testimonials  */
 /* start team members  */
+.team-members .team {
+  display: grid;
+}
+
 .member {
   direction: rtl;
   position: relative;
   right: -1rem;
   width: 80%;
-  height: 30rem;
   margin: 2rem auto;
   padding: 0 1rem 0.5rem;
   border-radius: 4%;
@@ -752,6 +783,12 @@ header nav ul.main-links > li:last-child:focus ul.other-links {
   font-size: 1.4rem;
   color: var(--main-color);
 }
+
+@media (min-width: 1200px) {
+  section.team-members .team {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* end team members  */
 /* start services  */
   /* start the zig-zag effect */
@@ -768,7 +805,8 @@ section.services .container::before {
   display: block;
   position: absolute;
   top: -26px;
-  width: 100%;
+  left: -7rem;
+  width: 130%;
   height: 10vh;
   background: linear-gradient(45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%), linear-gradient( -45deg, transparent 33.33%, #ececec 33.33% 66.66%, transparent 66.66%);
   background-repeat: repeat;
@@ -858,30 +896,40 @@ section.services .container::before {
   color: var(--main-color);
   font-size: 1.1rem;
 }
+
+@media screen and (min-width: 1200px) {
+  section.services .services-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* end services  */
 /* start coding skills  */
 .coding-skills {
+  display: flex;
   margin: 1rem;
+}
+.skills .skills-image {
+  display: none;
 }
 
 .coding-skills h4 {
   font-size: 1.2rem;
 }
 
-.coding-skill p {
+.skill p {
   background-color: #ececec;
   height: 2rem;
   position: relative;
 }
 
-.coding-skill p::before {
+.skill p::before {
   content: "";
   background-color: var(--main-color);
   display: inline-block;
   height: 100%;
 }
 
-.coding-skill p::after {
+.skill p::after {
   position: absolute;
   right: 0;
   top: -2.7rem;
@@ -893,32 +941,49 @@ section.services .container::before {
   font-size: 0.8rem;
 }
 
-.coding-skill:nth-child(1) p::before{
+.skill:nth-child(1) p::before{
   width: 80%;
 }
-.coding-skill:nth-child(1) p::after {
+.skill:nth-child(1) p::after {
   content: "80%";
 }
 
-.coding-skill:nth-child(2) p::before{
+.skill:nth-child(2) p::before{
   width: 85%;
 }
-.coding-skill:nth-child(2) p::after {
+.skill:nth-child(2) p::after {
   content: "85%";
 }
 
-.coding-skill:nth-child(3) p::before{
+.skill:nth-child(3) p::before{
   width: 70%;
 }
-.coding-skill:nth-child(3) p::after {
+.skill:nth-child(3) p::after {
   content: "70%";
 }
 
-.coding-skill:nth-child(4) p::before{
+.skill:nth-child(4) p::before{
   width: 80%;
 }
-.coding-skill:nth-child(4) p::after {
+.skill:nth-child(4) p::after {
   content: "80%";
+}
+
+@media screen and (min-width: 1200px) {
+  .skills .coding-skills {
+    justify-content: center;
+    align-items: center;
+    }
+  .skills .coding-skill {
+    flex-basis: 100%;
+  }
+  .skills .skills-image {
+    display: block;
+    width: 100%;
+  }
+  .skills .skills-image img {
+    max-width: 100%;
+  }
 }
 /* end coding skills  */
 /* start how to works */
@@ -932,6 +997,12 @@ section.how-works {
 
 .how-works-image img {
   max-width: 100%;
+}
+
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work-card {
@@ -966,12 +1037,37 @@ section.how-works {
   margin: 0;
   font-size: 1.2rem;
 }
+
+@media screen and (min-width: 1200px){
+  .work-cards {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .work-card {
+    display: flex;
+  }
+  .work-cards .how-works-image {
+    width: 100%;
+  }
+  .work-card .work-card-image {
+    width: 15%;
+  }
+  .work-card .work-card-info {
+    text-align: left;
+  }
+  .work-card-info p {
+    margin-left: 1rem;
+  }
+}
 /* end how to works */
 /* start pricing plans  */
 .pricing-plans {
   background-color: #ececec;
 }
 
+.pricing-plans .plans {
+  display: grid;
+}
 .plan {
   background-color: white;
   margin: 1rem;
@@ -1070,11 +1166,27 @@ li.check {
   margin: auto;
   width: fit-content;
 }
+
+@media screen and (min-width: 1200px) {
+  .pricing-plans .plans {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .plans .plan:nth-child(2) {
+    top: -2rem;
+}
+}
 /* end pricing plans  */
 /* start top videos  */
-.videos {
+.top-videos .videos {
+  display: flex;
+  flex-wrap: wrap;
   margin: 1rem;
   border: 1px solid #ddd;
+  justify-content: center;
+}
+
+.top-videos .videos .video-info {
+  flex-basis: 100%;
 }
 
 .videos .name {
@@ -1127,8 +1239,18 @@ li.check {
   background-color: white;
   text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+  .top-videos .videos {
+    flex-wrap: nowrap;
+  }
+  .top-videos .videos .video-info {
+    flex-basis: 34%;
+  }
+}
 /* end top videos  */
 /* start stats  */
+
 .stats h2 {
   margin: 0rem auto 4rem auto;
   text-align: center;
@@ -1153,11 +1275,46 @@ section.stats::before {
   position: relative;
 }
 
+.stats .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .stats .card {
   margin: 1rem;
   text-align: center;
   background-color: white;
   padding: 2rem;
+  flex-basis: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats .card::before {
+  right: 0;
+  top: -13rem;
+}
+
+.stats .card::after {
+  left: 0;
+  top: 13rem;
+}
+
+.stats .card::after, 
+.stats .card::before {
+  content: "";
+  position: absolute;
+  width: 0.1rem;
+  height: 13rem;
+  background-color: var(--main-color);
+  transition-property: top;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+
+.stats .card:hover::after, 
+.stats .card:hover::before {
+  top: 0;
 }
 
 .stats .card i {
@@ -1177,6 +1334,12 @@ section.stats::before {
   color: var(--main-color);
   font-size: 1.3rem;
 } 
+
+@media screen and (min-width: 1200px) {
+  .stats .cards {
+    flex-wrap: nowrap;
+  }
+}
 /* end stats  */
 /* start discount  */
 .discount h2 {
@@ -1356,7 +1519,7 @@ footer.contact p:last-of-type i {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 750px
   }
 } */
 @media (min-width: 1200px) {
