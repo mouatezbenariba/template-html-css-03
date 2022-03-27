@@ -1342,11 +1342,20 @@ section.stats::before {
 }
 /* end stats  */
 /* start discount  */
+.discount {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .discount h2 {
   position: relative;
   margin-bottom: 1rem;
   font-size: 2rem;
   padding-top: 3rem;
+}
+
+.discount .info, .discount .action {
+  width: 50%;
 }
 
 .discount .info{
@@ -1431,6 +1440,7 @@ footer.contact {
 
 footer.contact h2 {
   position: relative;
+  margin-top: 0;
   margin-bottom: 1rem;
   padding-top: 3rem;
   font-size: 3rem;
@@ -1519,7 +1529,7 @@ footer.contact p:last-of-type i {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px
+    width: 750px;
   }
 } */
 @media (min-width: 1200px) {
