@@ -1508,29 +1508,32 @@ footer.contact .phone span {
   margin: 1rem;
 }
 
-footer.contact .images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 footer.contact .images img {
   width: 78px;
   margin: 0.3rem;
   border: 5px solid white;
 }
 
-footer.contact p:last-of-type {
-  margin: 0;
-  padding: 2rem;
-  border-top: 1px solid;
-}
-
 footer.contact p:last-of-type i {
   color: red;
   font-size: 1.5rem;
 }
+
+@media screen and (min-width: 1200px) {
+  .contact .container {
+    display: flex;
+  }
+  footer.contact p:first-of-type {
+    margin: 0;
+}
+}
 /* end footer  */
+
+footer p:last-of-type {
+  margin: 0;
+  padding: 2rem;
+  border-top: 1px solid;
+}
 /* @media (min-width: 992px) {
   .container {
     width: 970px;
