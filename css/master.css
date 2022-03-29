@@ -1484,7 +1484,10 @@ footer.contact ul {
 footer.contact ul li {
   margin: auto 1rem;
   padding: 1rem;
-  border-bottom: 1px solid #eee;
+}
+
+footer.contact ul li:not(:last-child) {
+  border-bottom: 1px solid #444;
 }
 
 footer.contact ul li i {
@@ -1526,10 +1529,48 @@ footer.contact p:last-of-type i {
   footer.contact p:first-of-type {
     margin: 0;
 }
+  footer.contact .container {
+    padding: 2rem;
+  }
+  footer.contact .content-01 {
+    text-align: left;
+    width: 30%;
+  }
+  footer.contact .content-01 p {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  footer.contact ul {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+  footer.contact .loc-time {
+    text-align: left;
+  }
+  footer.contact .loc-time .location,
+  footer.contact .loc-time .time,
+  footer.contact .loc-time .phone {
+    display: flex;
+    align-items: center;
+  }
+  .footer-contact .loc-time .phone {
+    padding-right: 1rem;
+  }
+  .footer-contact .images {
+    align-items: center;
+    margin-top: 3rem;
+  }
+  footer.contact .links i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* check for repetition */
 }
 /* end footer  */
 
-footer p:last-of-type {
+.copyright {
   margin: 0;
   padding: 2rem;
   border-top: 1px solid;
