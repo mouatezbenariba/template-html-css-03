@@ -193,7 +193,6 @@ header nav ul.main-links > li > a:before {
 
 header nav ul.main-links > li:hover > a:before {
   width: calc(100% + 1.1rem);
-
 }
 
 header nav ul.main-links > li > a {
@@ -391,14 +390,8 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 }
 
 @media (min-width: 768px) {
-  .landing .container {
-    top: 40%;
-  }
   .landing h2 {
     font-size: 2rem;
-  }
-  .landing .container {
-    top: 29%;
   }
   .landing .text p {
     margin-left: 0 ;
@@ -425,13 +418,6 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 }
 
 @media (min-width: 992px) {
-  .landing .container {
-    display: flex;
-    position: relative;
-    top: 17%;
-    text-align: center;
-    align-items: center;
-  }
   .landing .text {
     text-align: left;
   }
@@ -1484,7 +1470,7 @@ li.check {
   width: fit-content;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .pricing-plans .plans {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1493,7 +1479,7 @@ li.check {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .pricing-plans .plans {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1570,7 +1556,7 @@ li.check {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .top-videos .videos {
     flex-wrap: nowrap;
   }
@@ -1579,7 +1565,7 @@ li.check {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .top-videos .videos {
     flex-wrap: nowrap;
   }
@@ -1936,6 +1922,7 @@ footer .images img {
     grid-template-rows: auto;
     justify-content: center;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -1973,22 +1960,33 @@ p.copyright i {
   font-weight: bold;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .container {
+    width: 750px;
+  }
+  .landing .container {
+    top: 29%;
+    width: 750px;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .landing .container {
+    display: flex;
+    position: relative;
+    top: 17%;
+    text-align: center;
+    align-items: center;
     width: 970px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
-
-
-
-/* @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-} */
