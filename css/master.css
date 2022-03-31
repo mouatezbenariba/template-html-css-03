@@ -941,12 +941,10 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 /* end team members  */
 /* start services  */
   /* start the zig-zag effect */
-  .services {
-    background-color: #ececec;
-}
-
-  .services {
+.services {
   position: relative;
+  background-color: #ececec;
+  counter-reset: card-number;
 }
 
 .services .container::before {
@@ -961,24 +959,20 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   background-repeat: repeat;
   background-size: 2rem;
 }
-  /* start the zig-zag effect */
-  .services {
-    counter-reset: card-number;
-  }
-
-  .services-cards {
+/* start the zig-zag effect */
+.services .services-cards {
   display: grid;
   gap: 2rem;
   margin: 1rem;
   background-color: #ececec;
 }
 
-.serv-card {
+.services .services-cards .serv-card {
   position: relative;
+  top: 0;
   background-color: white;
   box-shadow: 0 0 6px 0px #777777;
   transition-duration: 0.5s;
-  top: 0;
 }
 
 .serv-card:hover {
@@ -987,10 +981,10 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 
 .serv-card::before {
   content: "";
-  width: 0%;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
+  width: 0%;
   height: 3px;
   background-color: var( --main-color);
   transition-duration: 0.5s;
@@ -1000,27 +994,27 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   width: 100%;
 }
 
-.serv-card-image {
+.serv-card .serv-card-image {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.serv-card-image i {
+.serv-card .serv-card-image i {
   display: flex;
   justify-content: center;
   font-size: 4rem;
   color: #d5d5d5;
 }
 
-.serv-card-image h4 {
-  text-align: center;
+.serv-card .serv-card-image h4 {
   margin: 0;
   margin-top: 1rem;
+  text-align: center;
   font-size: 1.5rem;
   color: var(--main-color);
 }
 
-.serv-card-info {
+.serv-card .serv-card-info {
   position: relative; 
   display: flex;
   justify-content: flex-end;
@@ -1029,21 +1023,21 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   counter-increment: card-number;
 }
 
-.serv-card-info::before {
+.serv-card .serv-card-info::before {
   content: '0' counter(card-number);
-  color: white;
   position: absolute;
   left: 6%;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
   font-weight: bold;
+  color: white;
 }
 
-.serv-card-info a {
+.serv-card .serv-card-info a {
+  font-size: 1.1rem;
   text-decoration: none;
   color: var(--main-color);
-  font-size: 1.1rem;
 }
 
 @media (min-width: 700px) {
@@ -1057,8 +1051,6 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
 /* end services  */
 /* start coding skills  */
 .coding-skills {
