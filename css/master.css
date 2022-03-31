@@ -1053,30 +1053,29 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 }
 /* end services  */
 /* start coding skills  */
-.coding-skills {
+.skills .coding-skills {
   display: flex;
   margin: 1rem;
 }
-.skills .skills-image {
-  display: none;
-}
 
-.coding-skills h4 {
+.coding-skills .coding-skill .skill h4 {
   font-size: 1.2rem;
 }
 
-.skill p {
-  background-color: #ececec;
-  height: 2rem;
+.coding-skills .coding-skill .skill p {
   position: relative;
+  height: 2rem;
+  background-color: #ececec;
 }
 
-.skill p::before {
+.coding-skills .coding-skill .skill p::before {
   content: "";
-  background-color: var(--main-color);
   display: inline-block;
   height: 100%;
+  background-color: var(--main-color);
 }
+
+
 
 .skill p::after {
   position: absolute;
@@ -1090,10 +1089,12 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   font-size: 0.8rem;
 }
 
-.skill:nth-child(1) p::before{
+.skill:nth-child(1) p::before,
+.skill:nth-child(4) p::before{
   width: 80%;
 }
-.skill:nth-child(1) p::after {
+.skill:nth-child(1) p::after,
+.skill:nth-child(4) p::after {
   content: "80%";
 }
 
@@ -1111,12 +1112,6 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   content: "70%";
 }
 
-.skill:nth-child(4) p::before{
-  width: 80%;
-}
-.skill:nth-child(4) p::after {
-  content: "80%";
-}
 @media (max-width: 992px) {
   .skills .coding-skills {
     justify-content: center;
@@ -1126,8 +1121,8 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
     flex-basis: 100%;
   }
   .skills .skills-image {
-    display: none;
     width: 100%;
+    display: none;
   }
   .skills .skills-image img {
     max-width: 100%;
