@@ -840,7 +840,7 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   display: grid;
 }
 
-.member {
+.team-members .member {
   position: relative;
   right: -1rem;
   direction: rtl;
@@ -864,20 +864,19 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   transition-duration: 0.3s;
 }
 
-
 .member:hover::before {
   width: 100%;
   background-color: #ddd;
 }
 
-.member-image {
+.member .member-image {
   position: relative;
   left: -3rem;
   top: 2rem;
   margin-bottom: 0rem;
 }
 
-.member-image img {
+.member .member-image img {
   max-width: 100%;
   border-radius: 4%;
   filter: none;
@@ -885,28 +884,28 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   transition-duration: 0.3s;
 }
 
-.member:hover img {
+.member:hover .member-image img {
   filter: grayscale(1);
 }
 
-.team-contact {
+.member .team-contact {
   position: absolute;
+  top: 50%;
+  right: 2%;
   display: flex;
   flex-direction: column;
-  right: 2%;
-  top: 50%;
   transform: translateY(-50%);
   text-align: center;
 }
 
-.team-contact i {
+.member .team-contact i {
   margin: 1rem;
   color: #777;
 }
 
-.team-caption {
-  direction: ltr;
+.member .team-caption {
   position: relative;
+  direction: ltr;
 }
 
 .member:hover .team-caption h4 {
@@ -939,7 +938,6 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 /* end team members  */
 /* start services  */
   /* start the zig-zag effect */
