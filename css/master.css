@@ -749,7 +749,6 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 /* end features  */
 /* start testimonials  */
 .testimonials {
@@ -759,70 +758,71 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 .testimonials .test-cards {
   display: grid;
 }
-.testimonials .test-card {
-  background-color: white;
-  margin: 1rem;
-  border-radius: 4%;
-  box-shadow: 0px 0px 2px 3px #ddd;
+.testimonials .test-cards .test-card {
   position: relative;
+  margin: 1rem;
   padding: 1rem;
+  border-radius: 4%;
+  background-color: white;
+  box-shadow: 0px 0px 2px 3px #ddd;
 }
 
-.avatar {
+.testimonials .test-cards .test-card .avatar {
   position: absolute;
   top: -50%;
-  transform: translateY(50%);
   right: 0;
-  box-shadow: 0 0 0 10px #ececec;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
+  transform: translateY(50%);
+  box-shadow: 0 0 0 10px #ececec;
 }
 
-.avatar img {
+.testimonials .test-cards .test-card .avatar img {
   max-width: 100%;
   border-radius: 50%;
 }
 
-.testimonials h4 {
+.testimonials .test-cards .test-card h4 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.testimonials span {
+.testimonials .test-cards .test-card span {
   margin-bottom: 0.5rem;
   color: #7a7a7a;
 }
 
-.stars {
+.testimonials .test-cards .test-card .stars {
   margin-top: 0.5rem;
 }
 
-.stars > i:not(:last-of-type){
+.testimonials .test-cards .test-card .stars > i:not(:last-of-type){
   color: gold;
 }
 
 /* 4th testimonial card 5 stars */
-.test-cards .test-card:nth-of-type(4) .stars > i{
+.testimonials .test-cards .test-card:nth-of-type(4) .stars > i{
   color: gold;
 }
 
 /* 5th testimonial card 3 stars */
-.test-cards .test-card:nth-of-type(5) .stars > i:nth-of-type(4) {
+.testimonials .test-cards .test-card:nth-of-type(5) .stars > i:nth-of-type(4) {
   color: black;
 }
 
 /* 6th testimonial card 3 stars */
-.test-cards .test-card:nth-of-type(6) .stars > i:nth-of-type(4) {
+.testimonials .test-cards .test-card:nth-of-type(6) .stars > i:nth-of-type(4) {
   color: black;
 }
 
-.stars p {
+.testimonials .test-cards .test-card .stars p {
   margin: 0.5rem 0;
   color: #7a7a7a;
 }
+
 @media (min-width: 700px) {
   .testimonials .test-cards  {
     grid-template-columns: repeat(2, 1fr);
@@ -834,8 +834,6 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-
 /* end testimonials  */
 /* start team members  */
 .team-members .team {
@@ -843,9 +841,9 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
 }
 
 .member {
-  direction: rtl;
   position: relative;
   right: -1rem;
+  direction: rtl;
   width: 80%;
   margin: 2rem auto;
   padding: 0 1rem 0.5rem;
