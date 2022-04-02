@@ -5,41 +5,44 @@
 
 ### The challenge
 
-- Build out the project (clone) to the design/website provided:
-  - 
+- Clone from SCRATCH the Website Provided:
+  - [Elzero | Template](https://elzerowebschool.github.io/HTML_And_CSS_Template_Three/)
 
 ### Screenshot
 - Page Quality | web.dev : 
 <br>
 
+![Page Quality | web.dev]()
 
 ### Links
 
-- [Live Server Url](https://mouatezbenariba.github.io/template-html-css-03/)
+- Live Site URL: [Mouatez | Template](https://mouatezbenariba.github.io/template-html-css-03/)
 
 ### Built with
 
--
--
-
+- HTML5
+- CSS3 custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- CSS Animation / Transitions
 
 ### What I learned
 
--
--
+- How to use FontAwsome Icons in a List.
+- How to properly use clip-path property.
+- How to make Zig-zag border using Html & CSS.
+- I practised on Animation in CSS.
 
 ### Continued development
 
 Areas and concepts that I want to continue focusing on in future projects :
-  - 
-
-### Useful resources
-- []()
+  - Complete a section from the website that requires JavaScript (Countdown Timer).
 
 ## Author
-- 
+- [Osama Mohamed](https://github.com/OsamaElzero)
 
-## Cloned By
+## Cloned From Scratch By
 - Linkedin - [Elmouatez Billah Benariba](https://www.linkedin.com/in/mouatezbenariba/)
 - Twitter - [@mouatezbenariba](https://twitter.com/mouatezbenariba)
 - Instagram - [@mouatez.benariba](https://www.instagram.com/mouatez.benariba/)
