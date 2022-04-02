@@ -10,8 +10,6 @@ html {
 :root {
   --section-background : #ececec;
   --main-color: #2196f3;
-  --main-padding-top: ;
-  --main-padding-bottom : ;
 }
 /*  Components */
 .container {
@@ -1526,7 +1524,7 @@ li.check {
 /* start stats  */
 .stats {
   position: relative;
-  background-image: url(../images/stats.jpg);
+  background-image: url(../images/stats.webp);
 }
 
 .stats::before {
@@ -1649,7 +1647,7 @@ li.check {
 
 .discount .info{
   position: relative;
-  background-image: url(../images/discount-background1.jpg);
+  background-image: url(../images/discount-background1.webp);
   color: white;
   text-align: center;
 }
