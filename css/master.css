@@ -251,18 +251,13 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   }
 }
 
-@media (max-width: 992px) {
-  header nav ul.main-links > li > a:before {
-    top: -1.3rem;
-  }
-}
-
 @media (min-width: 992px) {
   header .container {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
+
   header h2 {
     text-align: left;
     flex-basis: 0;
@@ -270,6 +265,9 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   }
   header nav ul.main-links > li {
     padding: calc(9px + 1rem) 0.6rem;
+  }
+  header nav ul.main-links > li > a:before {
+    top: -1.3rem;
   }
   header nav ul.other-links {
     grid-template-columns: repeat(3, 1fr);
