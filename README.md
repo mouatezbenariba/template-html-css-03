@@ -1,5 +1,5 @@
 # [Elzero Web School - HTML CSS Template 03](https://mouatezbenariba.github.io/template-html-css-03/)
-- This is a solution to [<b>"HTML & CSS Practice n°:02"</b>](https://elzero.org/practical-html-css/) on [<b>Elzero Web School</b>](https://elzero.org/).
+- This is a solution to [<b>"HTML & CSS Practice n°:03"</b>](https://elzero.org/practical-html-css/) on [<b>Elzero Web School</b>](https://elzero.org/).
 
 ## Overview
 
