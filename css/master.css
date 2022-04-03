@@ -342,13 +342,13 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   position: relative;
   width: 28rem;
   animation-name: updown;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
 .landing .landing-image img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .landing a {
@@ -394,11 +394,11 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
     top: 0;
   }
   25% {
-    top: -2rem;
+    top: -1rem;
     }
 
   75% {
-    top: 2rem;
+    top: 1rem;
   }
 }
 
