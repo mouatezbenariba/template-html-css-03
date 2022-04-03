@@ -33,7 +33,7 @@
 - How to properly use clip-path property.
 - How to make Zig-zag border using Html & CSS.
 - How to assign multiple classes to an HTML container: [source]()
-- I practiced Animations in CSS.
+- I practiced CSS Animations.
 
 ### Continued development
 
