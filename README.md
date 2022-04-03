@@ -12,7 +12,7 @@
 - Page Quality | web.dev : 
 <br>
 
-![Page Quality | web.dev]()
+![Page Quality | web.dev](https://github.com/mouatezbenariba/template-html-css-03/blob/main/images/page-quality.PNG)
 
 ### Links
 
