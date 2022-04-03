@@ -461,22 +461,22 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   max-width: 100%;
 }
 
-.cards figcaption {
+.cards .card-info {
   padding: 0 1rem;
 }
 
-.cards figcaption h4 {
+.cards .card-info h4 {
   margin: 0.8rem 0;
   font-weight: 600;
 }
 
-.cards figcaption p:first-of-type {
+.cards .card-info p:first-of-type {
   margin-bottom: 1.3rem;
   color: #777;
   font-size: 0.9rem;
 }
 
-.cards figcaption p:last-of-type {
+.cards .card-info p:last-of-type {
   position: relative;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -486,12 +486,12 @@ header nav ul.main-links > li:last-child:hover ul.other-links {
   color: var(--main-color);
 }
 
-.cards p:last-of-type figcaption span {
+.cards p:last-of-type .card-info span {
   font-weight: 600;
   letter-spacing: -1px;
 }
 
-.cards figcaption p:last-of-type a {
+.cards .card-info p:last-of-type a {
   position: absolute;
   transform: translateY(13%);
   right: 21px;
